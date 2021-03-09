@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-project';
+  abc(a: number){
+    if( a == 1){
+      console.log("yes");
+    }
+    else{
+      console.log("no");
+    }
+  }
 }

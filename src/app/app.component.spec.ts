@@ -36,6 +36,18 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect("test").toBe('test');
+    expect("test").toBe('test1');
   });
+  it('demo test 11', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const app = fixture.componentInstance;
+    const compiled = app.abc(1);
+  });
+  // it('demo test 12', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const app = fixture.componentInstance;
+  //   const compiled = app.abc(0);
+  // });
 });
