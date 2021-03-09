@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test and Coverage') {
             steps {
-                echo 'Testing..'
+                echo 'Testing.. ${WORKSPACE}'
                 bat "ng test --no-watch --code-coverage"
                 // sh "print env|sort"
             }
