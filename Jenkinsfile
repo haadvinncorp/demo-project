@@ -18,7 +18,7 @@ pipeline {
     }
     post{
         always{
-            emailext body: 'Test Cases from the branch $env.BRANCH_NAME has been $env.BUILD_STATUS. Check the given link to see coverage report',
+            emailext body: 'Test Cases from the branch $BRANCH_NAME has been $BUILD_STATUS. Check the given link to see coverage report',
             subject: 'Jenkins build result',
             to: 'haad@vinncorp.com'
         }
