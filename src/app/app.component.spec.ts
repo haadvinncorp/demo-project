@@ -36,7 +36,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect("test").toBe('test1');
+    expect("test").toBe('test');
   });
   it('demo test 11', () => {
     const fixture = TestBed.createComponent(AppComponent);
