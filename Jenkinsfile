@@ -11,8 +11,8 @@ pipeline {
         stage('Test and Coverage') {
             steps {
                 echo 'Testing..'
-                // sh "npm run ng test --no-watch --code-coverage"
-                sh "print env|sort"
+                sh "ng test --no-watch --code-coverage"
+                // sh "print env|sort"
             }
         }
     }
